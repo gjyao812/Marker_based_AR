@@ -1,15 +1,15 @@
 # Marker Based AR
 
-基于 Unity AR Foundation 的图像标记 AR 项目。摄像头识别指定图片后，在标记位置显示并持续旋转 3D 模型。
+An image tracking AR project built with Unity AR Foundation. When the camera recognizes the configured reference image, a rotating 3D model appears on the marker.
 
-## 功能
+## Features
 
-- 使用 `ARTrackedImageManager` 识别图片标记
-- 在识别到的标记上生成 SpongeBob 模型
-- 模型围绕世界坐标 Y 轴自动旋转
-- 支持 Android ARCore 和 iOS ARKit
+- Tracks an image marker with `ARTrackedImageManager`
+- Spawns a SpongeBob model on the detected marker
+- Rotates the model around the world Y axis
+- Supports Android with ARCore and iOS with ARKit
 
-## 环境
+## Requirements
 
 - Unity `6000.3.24f1`
 - AR Foundation `6.3.5`
@@ -17,19 +17,19 @@
 - ARKit XR Plugin `6.3.5`
 - Input System `1.20.0`
 
-## 运行
+## Run the Project
 
-1. 使用 Unity Hub 打开项目。
-2. 打开 `Assets/MainScene.unity`。
-3. 在支持 ARCore 或 ARKit 的真机上构建并运行。
-4. 将摄像头对准项目配置的参考图片，模型会出现在图片位置。
+1. Open the project in Unity Hub.
+2. Open `Assets/MainScene.unity`.
+3. Build and run on an ARCore or ARKit compatible device.
+4. Point the camera at the configured reference image. The model will appear on the marker.
 
-参考图片位于 `Assets/Materials/marker_1.jpg`，图像库配置位于 `Assets/MyMarkers.asset`。
+The reference image is stored at `Assets/Materials/marker_1.jpg`. The image library is configured in `Assets/MyMarkers.asset`.
 
-## 主要文件
+## Main Files
 
-- `Assets/MainScene.unity`：AR 主场景
-- `Assets/Prefabs/SpawnedObject.prefab`：识别后生成的模型预制体
-- `Assets/Scripts/SpinObjectOnMarker.cs`：模型旋转逻辑
-- `Assets/MyMarkers.asset`：参考图像库
+- `Assets/MainScene.unity`: Main AR scene
+- `Assets/Prefabs/SpawnedObject.prefab`: Model spawned after image detection
+- `Assets/Scripts/SpinObjectOnMarker.cs`: Model rotation logic
+- `Assets/MyMarkers.asset`: Reference image library
 
