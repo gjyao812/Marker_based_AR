@@ -19,12 +19,12 @@ An image tracking AR project built with Unity AR Foundation. When the camera rec
 
 ## Run the Project
 
-1. Open the project in Unity Hub.
+1. Open the project in Unity Hub
 2. Open `Assets/MainScene.unity`
-3. Build and run on an ARCore or ARKit compatible device.
-4. Point the camera at the configured reference image. The model will appear on the marker.
+3. Build and run on an ARCore or ARKit compatible device
+4. Point the camera at the configured reference image. The model will appear on the marker
 
-The reference image is stored at `Assets/Materials/marker_1.jpg`. The image library is configured in `Assets/MyMarkers.asset`.
+The reference image is stored at `Assets/Materials/marker_1.jpg`. The image library is configured in `Assets/MyMarkers.asset`
 
 ## Main Files
 
